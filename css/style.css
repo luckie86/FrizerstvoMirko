@@ -1,0 +1,12 @@
+.navbar {
+  margin-bottom: auto;
+}
+
+.list-unstyled li {
+  font-size: 140%;
+  color: #555;
+}
+
+.nav li {
+  font-size: 115%;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Frizerstvo Mirko">
+    <meta name="keywords" content="Frizerstvo, Mirko, Nega Las, Barvanje, Striženje">
+    <meta name="author" content="Web development 1 d.o.o.">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frizerstvo Mirko</title>
+    <link rel="icon" href="img/mirko2.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-scissors"></span><span class="subhead"> Frizerstvo Mirko</span></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#kajnudimo">Kaj nudimo</a></li>
+                    <li><a href="#narocise">Naroči se</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#myModal" data-toggle="modal" data-target="#myModal">O nas</a></li>
+                    <li>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control col-xs-1" placeholder="Iskalnik">
+                            </div>
+                            <button type="submit" class="btn btn-default">Išči</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End navbar -->
+        </header>
+        <!-- Carousel -->
+        <div class="carousel slide" data-ride="carousel" id="featured">
+            <ol class="carousel-indicators">
+                <li data-target="#featured" data-slide-to="0" class="active"> </li>
+                <li data-target="#featured" data-slide-to="1"> </li>
+                <li data-target="#featured" data-slide-to="2"> </li>
+                <li data-target="#featured" data-slide-to="3"> </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/1.jpg" alt="Frizer 1">
+                </div>
+                <div class="item">
+                    <img src="img/2.jpg" alt="Frizer 2">
+                </div>
+                <div class="item">
+                    <img src="img/3.jpg" alt="Frizer 3">
+                </div>
+                <div class="item">
+                    <img src="img/4.jpg" alt="Frizer 4">
+                </div>
+            </div>
+            <!--Carousel inner-->
+            <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span> </a>
+
+            <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span> </a>
+        </div>
+        <!--End Carousel-->
+
+        <!-- Kaj nudimo -->
+        <h1 class="text-center" id="kajnudimo"> Kaj nudimo </h1>
+
+        <section class="col-sm-4">
+            <h2 class="text-center"> Nega Las </h2>
+            <img class="img-responsive" src="img/nega.jpg" alt="Nega">
+        </section>
+
+        <section class="col-sm-4">
+            <h2 class="text-center"> Barvanje </h2>
+            <img class="img-responsive" src="img/barvanje.jpg" alt="Barvanje">
+        </section>
+
+        <section class="col-sm-4">
+            <h2 class="text-center"> Striženje </h2>
+            <img class="img-responsive" src="img/strizenje.jpg" alt="Striženje">
+        </section>
+        <!-- End kaj nudimo -->
+
+        <!-- Naroči se obrazec -->
+        <h1 class="text-center" id="narocise"> Naroči se </h1>
+        <div class="col-sm-6">
+            <form>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Ime in Priimek">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Tel. številka">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Termin">
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Ostalo (želje glede pričeske itd.)"></textarea>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                  <input type="checkbox"> Strinjam se, da je Mirko najboljši frizer.
+                </label>
+                </div>
+                <input type="submit" class="btn btn-success" value="Pošlji">
+            </form>
+        </div>
+        <!-- Konec naroči se obrazca -->
+
+        <!-- Delovni čas -->
+        <section class="col-sm-6">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Dan</th>
+                        <th>Delovne Ure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Pondeljek</th>
+                        <td>8.00 - 16.00</td>
+                    </tr>
+                    <tr class="active">
+                        <th scope="row">Torek</th>
+                        <td>10.00 - 18.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sreda</th>
+                        <td>8.00 - 16.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Četrtek</th>
+                        <td>8.00 - 16.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Petek</th>
+                        <td>12.00 - 20.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sobota</th>
+                        <td>8.00 - 16.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nedelja</th>
+                        <td>8.00 - 12.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>* Ob praznikih velja nedeljski urnik </h5>
+        </section>
+        <!-- Konec delovni čas -->
+
+        <!-- FAQ -->
+
+        <!-- Accordion -->
+        <section class="col-sm-12">
+            <h1 class="text-center" id="faq">FAQ (pogosta vprašanja)</h1>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+        <a href="#salon-ekipa" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="salon-ekipa">Kakšen je salon in ekipa?</a>
+      </h4>
+                    </div>
+                    <div class="panel-collapse collapse in" id="salon-ekipa" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+        <a href="#hisni-ljubljencki" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="hisni-ljubljencki">Ali sprejemate hišne ljubljenčke?</a>
+      </h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="hisni-ljubljencki" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+        <a href="#nagrade" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="nagrade">Imate kakšne nagrade s tekmovanj?</a>
+      </h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="nagrade" role="tabpanel">
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Accordion -->
+        <!-- End FAQ -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="col-sm-4">
+                <h3 class="text-center"> Kontakt: </h3>
+                <ul class="list-unstyled">
+                    <li>Frizer Mirko s.p.</li>
+                    <li>Davčna številka: 24598635</li>
+                    <li>Frizerska ulica 5</li>
+                    <li>1000 Ljubljana</li>
+                    <li>Tel: 01/345 260 113</li>
+                    <li>Email: <a href="mailto:frizer.mirko@f-mirko.com">frizer.mirko@f-mirko.com</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="img/mirko2.jpg" class="img-responsive" alt="Mirko Logotip">
+            </div>
+
+            <div class="col-sm-4">
+                <div class="list-group">
+                    <h3 class="text-center"> Navigacija: </h3>
+                    <a href="#kajnudimo" class="list-group-item">Kaj nudimo</a>
+                    <a href="#narocise" class="list-group-item">Naroči se</a>
+                    <a href="#faq" class="list-group-item">Pogosta vprašanja</a>
+                    <a href="#onas" class="list-group-item" data-toggle="modal" data-target="#myModal">O nas</a>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">O nas</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Smo relativno mlad kolektiv, vedno nasmejani, prijazni. Imamo dolgoletne izkušnje z profesionalno lasno kozmetiko Schwarzkopf, v dogovoru z dolgoletnim partnerjem Hair Beauty d.o.o smo pa letos septembra začeli delati z profesionlano
+                            lasno kozmetiko Indola, katero oni distribuirajo.</p>
+                        <p>Salon je prostoren in domač in v njem delajo prijazne in sposobne frizerke, ki oblikujejo pričeske z občutkom in domišljijo.</p>
+                        <p> Pri nas je dobrodošel vsak, prepričani smo, da bomo želji vsakega posameznika lahko ustregli v našem delovnem času. Pravijo, da ni pomembna dolžina las, temveč šteje le urejena pričeska.</p>
+                        <img src="img/onas.jpg" class="img-responsive" alt="O nas">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zapri</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal-->
+
+    </div>
+    <!-- container-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
